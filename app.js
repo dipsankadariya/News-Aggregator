@@ -17,7 +17,7 @@ searchBtn.addEventListener('click', async () => {
     } else {
         console.log("Error:", response.statusText);
         articlesContainer.innerHTML = '<p>Error fetching data. Please try again later.</p>';
-    }
+    } 
 });
 
 function displayNews(articles, count) {
@@ -35,3 +35,4 @@ function displayNews(articles, count) {
         articlesContainer.appendChild(articleElement);
     }
 }
+
